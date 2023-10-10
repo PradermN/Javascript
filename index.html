@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prad - QuertyType</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Scripts of the game -->
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>QuertyType</h1>
+        <h2>The application to type correct and faster !</h2>
+        <h3>QuertyType in an online application to learn typing correct and fast wiht keyboard :)</h3>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="zoneOptions">
+            <p>Choose your option (word or sentence) and type it in the area down.</p>
+            <div class="optionSource">
+                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <label for="mots">Words</label>
+                <input type="radio" name="optionSource" id="phrases" value="2">
+                <label for="phrases">Sentences</label>
+            </div>
+        </div>
+
+        <div class="zoneProposition">
+            Qwerty
+        </div>
+
+        <div class="zoneSaisie">
+            <input type="text" id="inputEcriture" name="inputEcriture">
+            <button id="btnValiderMot">Submit</button>
+        </div>
+
+        <div class="zoneScore">
+            Your score : <span>0</span>
+        </div>
+
+        <div class="zonePartage">
+            <button>Share</button>
+        </div>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        PRADART
+    </footer>
+
+    <!-- Popup of the page -->
+    <div class="popupBackground">
+        <div class="popup">
+            <div>Share your score</div>
+            <form novalidate>
+                <label for="nom">Your name</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <label for="email">Who do you want to share your score with?</label>
+                <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                <button id="btnEnvoyerMail">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
